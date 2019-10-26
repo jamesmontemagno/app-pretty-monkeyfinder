@@ -32,12 +32,15 @@
         <ListView ItemsSource="{Binding Monkeys}"
                   Grid.ColumnSpan="2"
                   SeparatorColor="Red"
+                  
+                  ItemSelected="ListView_ItemSelected"
                   SeparatorVisibility="None"
                   HasUnevenRows="True">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
                         <Frame
+                            InputTransparent="True"
                             Margin="10,5" Padding="0"
                             BackgroundColor="White" CornerRadius="10"
                             HeightRequest="125" IsClippedToBounds="True"
